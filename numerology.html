@@ -14,49 +14,49 @@
     
     <style>
         /* Custom CSS styling */
-      body {
-          font-family: Arial, sans-serif;
-          background-color: #5b810aa6; 
-          color: #343a40; 
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9fac6a6; 
+            color: #343a40; 
+        }
 
-      .navbar {
-          background-color: #0f3a048c; 
-          height: 50px;
-      }
+        .navbar {
+            background-color: #dfbf09e5; 
+            height: 50px;
+        }
 
-      .navbar-brand {
-          color: #18121a;
-          font-weight: bold;
-          font-size: 1.5rem; 
-      }
+        .navbar-brand {
+            color: #18121a;
+            font-weight: bold;
+            font-size: 1.5rem; 
+        }
 
-      .navbar-nav .nav-link {
-          color: #e6da3796; 
-          font-weight: bold;
-      }
+        .navbar-nav .nav-link {
+            color: #1d1b0296; 
+            font-weight: bold;
+        }
 
-      .navbar-toggler-icon {
-          color: #0ac26ce0; 
-      }
+        .navbar-toggler-icon {
+            color: #dfbf09e5; 
+        }
 
-      .jumbotron {
-          background-color: #0f304e2a; 
-          padding: 4rem 2rem; 
-          margin-bottom: 4rem; 
-      }
+        .jumbotron {
+            background-color: #0f304e2a; 
+            padding: 4rem 2rem; 
+            margin-bottom: 4rem; 
+        }
 
-      .jumbotron h1 {
-          color: #bb1eb3; 
-          font-size: 3rem; 
-          font-weight: bold;
-      }
+        .jumbotron h1 {
+            color: #bb1eb3; 
+            font-size: 3rem; 
+            font-weight: bold;
+        }
 
-      .lead {
-          color: #5a181b; 
-          font-size: 1.25rem;
-          font-style: italic;
-      }
+        .lead {
+            color: #5a181b; 
+            font-size: 1.25rem;
+            font-style: italic;
+        }
 
       * {
       margin: 0;
@@ -94,6 +94,28 @@
       color: #555;
     }
 
+    .coding-font {
+            font-family: 'Fira Code', monospace;
+            font-size: 2rem;
+            color: #1e472e; 
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5); 
+        }
+
+    @keyframes dot-animation {
+            0%{ content: "N"; }
+            12% { content: "NA"; }
+            28% { content: "NAM"; }
+            46% { content: "NAME."}
+            64% {content: "NAME.."}
+            82%{content: "NAME..."}
+            100%{content: "NAME...."}
+        }
+
+        .dots::after {
+            display: inline-block;
+            content: ".";
+            animation: dot-animation 4.5s infinite steps(1);
+        }
       @keyframes slideIn {
               0% {
                   transform: translateY(-50px);
@@ -107,15 +129,15 @@
           }
 
           .labs-heading {
-              animation: slideIn 1s ease-out;
+              animation: slideIn 2s ease-out;
           }
 
 
       .footer {
-          background-color: #5b810aa6; 
-          color: #f8c86e;
-          padding: 2rem 0; 
-      }
+            background-color: #dfbf09e5; 
+            color: #1d1b0296;
+            padding: 2rem 0; 
+        }
 
       .footer ul li a {
           color: #f183c4; 
@@ -157,6 +179,17 @@
         <p class="text-xl">Explore below:--</p>
     </div>
   </section>
+
+  <section class="full-height py-20 flex items-center justify-center">
+    <div class="text-center">
+        <h5 class="coding-font">Power of <span class="dots"></span></h5>
+        <ul class="font-semibold">
+            <li>Change in spellings of your NAME can change your life</li>
+            <li>&</li>
+            <li>change in spellings of your BUSINESS NAME can change the growth of your business/company!</li>
+    </div>
+  </section>
+
 
 <footer class="footer py-4 mt-5 text-center">
   <div class="container">
